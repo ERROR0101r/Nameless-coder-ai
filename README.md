@@ -19,12 +19,14 @@
 - [📚 What Nameless Knows](#-what-nameless-knows)
 - [🚀 Quick Start Guide](#-quick-start-guide)
 - [📦 Installation Methods](#-installation-methods)
+- [🎯 How to Add More Videos](#-how-to-add-more-videos-train-nameless)
 - [💬 How to Use](#-how-to-use)
 - [🛠️ Commands](#️-commands)
 - [❓ Example Questions](#-example-questions)
 - [📂 Repository Structure](#-repository-structure)
 - [👨‍💻 About the Creator](#-about-the-creator)
 - [⭐ Support](#-support-the-project)
+- [⚠️ Disclaimer](#️-disclaimer)
 - [📝 License](#-license)
 
 ---
@@ -154,18 +156,76 @@ wget https://raw.githubusercontent.com/ERROR0101r/Nameless-coder-ai/main/app.py
 python3 app.py
 ```
 
-### **METHOD 3: Direct Python (No Git)**
+### **METHOD 3: Windows Installation**
+
+```powershell
+# Open PowerShell as Administrator
+cd C:\Users\YourName\Downloads\Nameless-coder-ai-main
+pip install embedchain
+python app.py
+```
+
+---
+
+## 🎯 **HOW TO ADD MORE VIDEOS (TRAIN NAMELESS)**
+
+Want to teach Nameless new things? Just add more YouTube URLs to the `videos` list in `app.py`:
+
+### **Step 1: Open `app.py` in any text editor**
+
+### **Step 2: Find the videos list (around line 15-20)**
 
 ```python
-# Just create a file called nameless.py and paste this:
-from embedchain import App
-nameless = App()
-# Add your video URLs here...
-nameless.add("youtube_video", "https://youtu.be/Y8Tko2YC5hA")
-# Then start chatting
-while True:
-    q = input("You: ")
-    print(nameless.query(q))
+videos = [
+    # Your original videos
+    "https://youtu.be/Y8Tko2YC5hA?si=uJh5kTuAoLiZrOmJ",
+    "https://youtu.be/UrsmFxEIp5k?si=skVMibCIZj2JULRo",
+    # ... more videos ...
+]
+```
+
+### **Step 3: Add your new video URLs**
+
+```python
+videos = [
+    # Existing videos...
+    
+    # YOUR NEW VIDEOS - Add them anywhere
+    "https://youtu.be/YOUR_VIDEO_ID_1",
+    "https://youtu.be/YOUR_VIDEO_ID_2",
+    "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_3",
+]
+```
+
+### **Step 4: Save the file and run again**
+
+```bash
+python app.py
+```
+
+### **💡 Quick Tips:**
+- Add as many videos as you want (100+)
+- Any YouTube URL works (youtu.be or youtube.com)
+- Mix different topics - Nameless learns everything
+- First load will take time (1-2 min per video)
+
+### **Example - Adding New Topics:**
+
+```python
+videos = [
+    # ... existing videos ...
+    
+    # New hacking videos
+    "https://youtu.be/3FNYvj2U0HM",  # More ethical hacking
+    "https://youtu.be/lZAoFs75_cs",  # Kali Linux advanced
+    
+    # New programming tutorials
+    "https://youtu.be/PkZNo7MFNFg",  # Learn Java
+    "https://youtu.be/8JJ101D3knE",  # React.js course
+    
+    # Fun stuff
+    "https://youtu.be/JZQ5p3W0qQE",  # Mind-blowing facts
+]
 ```
 
 ---
@@ -311,6 +371,21 @@ If you find Nameless useful, please:
 - ⭐ **Star** the repository on [GitHub](https://github.com/ERROR0101r/Nameless-coder-ai)
 - 📢 **Share** with your friends
 - 📝 **Follow** on [Telegram](https://t.me/ERROR0101risback) and [Instagram](https://instagram.com/fahad0101r)
+
+---
+
+## ⚠️ **DISCLAIMER**
+
+**IMPORTANT - PLEASE READ CAREFULLY:**
+
+- Nameless is trained on YouTube videos including ethical hacking content for **educational purposes only**
+- The creator (**@ERROR0101risback | fahad0101r**) is **NOT responsible** for how you use this information
+- **Do not use** any knowledge gained from Nameless for illegal activities
+- Hacking tools and techniques should only be used on your own devices or with explicit permission
+- Always follow local laws and regulations
+- By using Nameless, you agree that you are solely responsible for your actions
+
+> 🛑 **WARNING:** Misuse of hacking knowledge can lead to serious legal consequences including criminal charges. Use responsibly and ethically!
 
 ---
 
