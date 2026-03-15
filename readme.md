@@ -351,5 +351,5 @@ https://img.shields.io/badge/Telegram-@ERROR0101risback-26A5E4?style=flat-square
 https://img.shields.io/badge/Instagram-@fahad0101r-E4405F?style=flat-square&logo=instagram
 https://img.shields.io/badge/GitHub-ERROR0101r-181717?style=flat-square&logo=github
 
-  <p>© 2025 Nameless Coder AI. All rights reserved.</p>
+  <p>© 2026 Nameless Coder AI. All rights reserved.</p>
 </div>
